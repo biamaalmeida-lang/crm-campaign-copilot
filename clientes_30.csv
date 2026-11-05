@@ -1,0 +1,31 @@
+﻿id_cliente,data_cadastro,cidade,uf,canal_aquisicao,canal_preferido,categoria_preferida,consentimento_email,consentimento_whatsapp,email_teste
+CLI-001,2025-09-03,São Paulo,SP,Orgânico,Sem preferência,Relógios,Sim,Sim,cliente001@example.com
+CLI-002,2025-07-01,Recife,PE,Influenciadores,E-mail,Relógios,Não,Não,cliente002@example.com
+CLI-003,2025-06-28,Niterói,RJ,Influenciadores,WhatsApp,Bolsas,Sim,Não,cliente003@example.com
+CLI-004,2025-06-14,Salvador,BA,Redes sociais,E-mail,Bijuterias,Sim,Sim,cliente004@example.com
+CLI-005,2025-10-19,Niterói,RJ,Influenciadores,E-mail,Óculos,Sim,Não,cliente005@example.com
+CLI-006,2025-08-07,São Paulo,SP,Orgânico,E-mail,Óculos,Sim,Não,cliente006@example.com
+CLI-007,2025-06-07,Niterói,RJ,Evento,E-mail,Óculos,Sim,Sim,cliente007@example.com
+CLI-008,2025-10-24,Rio de Janeiro,RJ,Busca paga,WhatsApp,Bijuterias,Sim,Não,cliente008@example.com
+CLI-009,2025-12-01,São Paulo,SP,Redes sociais,E-mail,Acessórios de cabelo,Sim,Não,cliente009@example.com
+CLI-010,2025-07-31,Curitiba,PR,Redes sociais,WhatsApp,Óculos,Sim,Sim,cliente010@example.com
+CLI-011,2025-03-29,Porto Alegre,RS,Redes sociais,WhatsApp,Óculos,Sim,Não,cliente011@example.com
+CLI-012,2025-12-26,Brasília,DF,Busca paga,E-mail,Bolsas,Sim,Sim,cliente012@example.com
+CLI-013,2025-12-09,Recife,PE,Busca paga,E-mail,Acessórios de cabelo,Não,Sim,cliente013@example.com
+CLI-014,2025-04-15,Porto Alegre,RS,Indicação,E-mail,Óculos,Sim,Sim,cliente014@example.com
+CLI-015,2026-06-29,Curitiba,PR,Influenciadores,E-mail,Acessórios de cabelo,Sim,Sim,cliente015@example.com
+CLI-016,2026-07-04,Recife,PE,Busca paga,Sem preferência,Lenços,Não,Sim,cliente016@example.com
+CLI-017,2026-06-12,Niterói,RJ,Indicação,E-mail,Acessórios de cabelo,Sim,Sim,cliente017@example.com
+CLI-018,2025-07-20,Rio de Janeiro,RJ,Indicação,WhatsApp,Acessórios de cabelo,Sim,Não,cliente018@example.com
+CLI-019,2026-09-17,São Paulo,SP,Evento,WhatsApp,Bolsas,Sim,Não,cliente019@example.com
+CLI-020,2026-06-22,Curitiba,PR,Evento,WhatsApp,Acessórios de cabelo,Não,Sim,cliente020@example.com
+CLI-021,2025-01-27,Brasília,DF,Orgânico,WhatsApp,Óculos,Sim,Sim,cliente021@example.com
+CLI-022,2025-05-14,Brasília,DF,Redes sociais,Sem preferência,Lenços,Sim,Não,cliente022@example.com
+CLI-023,2025-06-09,Niterói,RJ,Redes sociais,Sem preferência,Carteiras,Sim,Sim,cliente023@example.com
+CLI-024,2024-12-14,Porto Alegre,RS,Busca paga,Sem preferência,Lenços,Não,Sim,cliente024@example.com
+CLI-025,2025-10-09,Salvador,BA,Indicação,WhatsApp,Óculos,Não,Não,cliente025@example.com
+CLI-026,2024-12-31,Salvador,BA,Redes sociais,WhatsApp,Bolsas,Sim,Não,cliente026@example.com
+CLI-027,2025-02-02,Niterói,RJ,Orgânico,E-mail,Óculos,Sim,Não,cliente027@example.com
+CLI-028,2024-12-13,Belo Horizonte,MG,Evento,WhatsApp,Carteiras,Não,Não,cliente028@example.com
+CLI-029,2025-05-11,Recife,PE,Influenciadores,E-mail,Bolsas,Sim,Não,cliente029@example.com
+CLI-030,2024-12-06,Salvador,BA,Evento,WhatsApp,Lenços,Sim,Sim,cliente030@example.com

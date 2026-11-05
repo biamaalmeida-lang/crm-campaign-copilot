@@ -1,0 +1,141 @@
+﻿id_pedido,id_cliente,data_pedido,categoria,canal_venda,valor_bruto_brl,desconto_brl,receita_liquida_brl,status_pedido
+PED-0001,CLI-001,2025-11-22,Relógios,Loja física,598.58,0.00,598.58,Concluído
+PED-0002,CLI-001,2026-02-01,Lenços,E-commerce,49.84,2.49,47.35,Concluído
+PED-0003,CLI-001,2026-02-17,Bijuterias,Loja física,246.08,0.00,246.08,Concluído
+PED-0004,CLI-001,2026-04-14,Relógios,E-commerce,191.45,38.29,153.16,Concluído
+PED-0005,CLI-001,2026-04-27,Relógios,Loja física,225.44,45.09,180.35,Concluído
+PED-0006,CLI-001,2026-05-27,Relógios,E-commerce,406.26,40.63,365.63,Concluído
+PED-0007,CLI-001,2026-10-25,Relógios,Loja física,323.28,48.49,274.79,Concluído
+PED-0008,CLI-002,2025-10-01,Relógios,E-commerce,293.35,0.00,293.35,Concluído
+PED-0009,CLI-002,2025-10-10,Relógios,E-commerce,459.74,22.99,436.75,Concluído
+PED-0010,CLI-002,2025-12-30,Relógios,E-commerce,908.48,45.42,863.06,Concluído
+PED-0011,CLI-002,2026-04-01,Relógios,E-commerce,345.22,17.26,327.96,Concluído
+PED-0012,CLI-002,2026-05-03,Relógios,Loja física,183.00,0.00,183.00,Concluído
+PED-0013,CLI-002,2026-06-12,Relógios,E-commerce,596.52,29.83,566.69,Concluído
+PED-0014,CLI-002,2026-09-02,Relógios,E-commerce,196.60,19.66,176.94,Concluído
+PED-0015,CLI-002,2026-10-19,Bijuterias,E-commerce,136.40,0.00,136.40,Concluído
+PED-0016,CLI-003,2025-08-29,Bolsas,E-commerce,199.37,19.94,179.43,Concluído
+PED-0017,CLI-003,2025-12-06,Bolsas,E-commerce,292.04,29.20,262.84,Concluído
+PED-0018,CLI-003,2026-02-20,Acessórios de cabelo,E-commerce,73.52,0.00,73.52,Concluído
+PED-0019,CLI-003,2026-04-20,Bolsas,E-commerce,206.58,30.99,175.59,Concluído
+PED-0020,CLI-003,2026-06-02,Bolsas,Loja física,826.76,0.00,826.76,Concluído
+PED-0021,CLI-003,2026-08-21,Lenços,E-commerce,121.29,0.00,121.29,Concluído
+PED-0022,CLI-003,2026-10-15,Acessórios de cabelo,E-commerce,37.46,0.00,37.46,Concluído
+PED-0023,CLI-004,2025-10-02,Bijuterias,E-commerce,136.59,20.49,116.10,Concluído
+PED-0024,CLI-004,2025-10-08,Bijuterias,E-commerce,105.70,15.86,0.00,Cancelado
+PED-0025,CLI-004,2026-02-11,Relógios,E-commerce,447.56,89.51,358.05,Concluído
+PED-0026,CLI-004,2026-03-11,Carteiras,E-commerce,171.64,0.00,171.64,Concluído
+PED-0027,CLI-004,2026-03-23,Bijuterias,Loja física,114.63,0.00,114.63,Concluído
+PED-0028,CLI-004,2026-04-04,Relógios,E-commerce,372.52,74.50,298.02,Concluído
+PED-0029,CLI-004,2026-06-04,Bijuterias,E-commerce,178.64,8.93,169.71,Concluído
+PED-0030,CLI-004,2026-09-08,Óculos,Loja física,631.66,94.75,536.91,Concluído
+PED-0031,CLI-004,2026-10-31,Bijuterias,E-commerce,106.67,0.00,106.67,Concluído
+PED-0032,CLI-005,2026-02-07,Óculos,Loja física,246.46,12.32,234.14,Concluído
+PED-0033,CLI-005,2026-02-12,Acessórios de cabelo,E-commerce,94.38,4.72,89.66,Concluído
+PED-0034,CLI-005,2026-02-22,Óculos,Loja física,237.58,0.00,237.58,Concluído
+PED-0035,CLI-005,2026-04-21,Óculos,E-commerce,272.58,27.26,245.32,Concluído
+PED-0036,CLI-005,2026-05-18,Óculos,E-commerce,161.79,0.00,161.79,Concluído
+PED-0037,CLI-005,2026-06-20,Óculos,E-commerce,175.15,0.00,175.15,Concluído
+PED-0038,CLI-005,2026-06-27,Óculos,Loja física,230.71,11.54,219.17,Concluído
+PED-0039,CLI-005,2026-06-28,Óculos,E-commerce,110.95,11.10,99.85,Concluído
+PED-0040,CLI-005,2026-09-28,Óculos,E-commerce,140.68,0.00,140.68,Concluído
+PED-0041,CLI-005,2026-10-18,Óculos,E-commerce,370.24,0.00,370.24,Concluído
+PED-0042,CLI-006,2025-11-03,Lenços,Loja física,146.78,0.00,146.78,Concluído
+PED-0043,CLI-006,2026-05-29,Óculos,Loja física,411.84,20.59,391.25,Concluído
+PED-0044,CLI-006,2026-09-09,Óculos,E-commerce,344.80,68.96,275.84,Concluído
+PED-0045,CLI-006,2026-10-06,Óculos,E-commerce,311.92,0.00,311.92,Concluído
+PED-0046,CLI-007,2025-08-21,Bijuterias,E-commerce,104.88,5.24,99.64,Concluído
+PED-0047,CLI-007,2025-10-19,Relógios,E-commerce,368.75,73.75,295.00,Concluído
+PED-0048,CLI-007,2025-11-20,Óculos,Loja física,161.00,0.00,0.00,Devolvido
+PED-0049,CLI-007,2026-04-15,Bijuterias,Loja física,198.36,0.00,198.36,Concluído
+PED-0050,CLI-007,2026-08-12,Relógios,E-commerce,180.58,36.12,144.46,Concluído
+PED-0051,CLI-007,2026-09-08,Bijuterias,E-commerce,106.51,0.00,106.51,Concluído
+PED-0052,CLI-007,2026-10-11,Bolsas,E-commerce,247.97,0.00,247.97,Concluído
+PED-0053,CLI-008,2025-12-20,Bijuterias,E-commerce,268.98,0.00,268.98,Concluído
+PED-0054,CLI-008,2026-07-09,Bijuterias,E-commerce,60.02,6.00,0.00,Cancelado
+PED-0055,CLI-008,2026-09-15,Bijuterias,Loja física,269.42,53.88,215.54,Concluído
+PED-0056,CLI-008,2026-10-01,Acessórios de cabelo,Loja física,40.71,8.14,32.57,Concluído
+PED-0057,CLI-009,2026-02-07,Óculos,Loja física,502.66,50.27,452.39,Concluído
+PED-0058,CLI-009,2026-02-25,Acessórios de cabelo,E-commerce,53.97,8.10,45.87,Concluído
+PED-0059,CLI-009,2026-03-26,Bolsas,E-commerce,427.60,0.00,427.60,Concluído
+PED-0060,CLI-009,2026-07-29,Acessórios de cabelo,E-commerce,112.62,0.00,112.62,Concluído
+PED-0061,CLI-009,2026-10-01,Acessórios de cabelo,Loja física,93.32,18.66,74.66,Concluído
+PED-0062,CLI-010,2025-08-22,Óculos,E-commerce,184.28,0.00,184.28,Concluído
+PED-0063,CLI-010,2025-09-07,Relógios,E-commerce,171.23,0.00,171.23,Concluído
+PED-0064,CLI-010,2025-10-29,Óculos,Loja física,266.18,0.00,266.18,Concluído
+PED-0065,CLI-010,2025-11-04,Acessórios de cabelo,E-commerce,114.68,0.00,114.68,Concluído
+PED-0066,CLI-010,2026-05-11,Óculos,E-commerce,200.45,0.00,200.45,Concluído
+PED-0067,CLI-010,2026-10-16,Carteiras,E-commerce,490.80,73.62,417.18,Concluído
+PED-0068,CLI-011,2025-07-19,Carteiras,E-commerce,392.46,39.25,353.21,Concluído
+PED-0069,CLI-011,2026-02-16,Óculos,Loja física,558.10,83.72,474.38,Concluído
+PED-0070,CLI-011,2026-03-21,Óculos,E-commerce,450.32,0.00,450.32,Concluído
+PED-0071,CLI-011,2026-08-26,Óculos,Loja física,95.84,0.00,95.84,Concluído
+PED-0072,CLI-012,2026-03-22,Bolsas,Loja física,405.35,60.80,344.55,Concluído
+PED-0073,CLI-012,2026-10-01,Bolsas,E-commerce,352.80,0.00,352.80,Concluído
+PED-0074,CLI-013,2026-01-19,Bijuterias,E-commerce,58.70,0.00,58.70,Concluído
+PED-0075,CLI-013,2026-09-08,Bijuterias,E-commerce,160.45,0.00,160.45,Concluído
+PED-0076,CLI-014,2025-06-24,Óculos,Loja física,213.19,0.00,213.19,Concluído
+PED-0077,CLI-014,2026-03-28,Óculos,Loja física,197.48,0.00,197.48,Concluído
+PED-0078,CLI-014,2026-09-09,Acessórios de cabelo,Loja física,116.00,11.60,104.40,Concluído
+PED-0079,CLI-015,2026-07-10,Acessórios de cabelo,E-commerce,101.41,0.00,101.41,Concluído
+PED-0080,CLI-015,2026-08-09,Acessórios de cabelo,E-commerce,70.18,7.02,63.16,Concluído
+PED-0081,CLI-015,2026-08-14,Acessórios de cabelo,E-commerce,181.26,0.00,181.26,Concluído
+PED-0082,CLI-015,2026-08-28,Carteiras,Loja física,154.20,15.42,138.78,Concluído
+PED-0083,CLI-016,2026-09-19,Acessórios de cabelo,E-commerce,104.78,15.72,89.06,Concluído
+PED-0084,CLI-016,2026-11-03,Lenços,E-commerce,157.93,23.69,134.24,Concluído
+PED-0085,CLI-017,2026-10-07,Bolsas,E-commerce,237.05,47.41,189.64,Concluído
+PED-0086,CLI-018,2025-10-25,Relógios,Loja física,457.55,45.76,411.79,Concluído
+PED-0087,CLI-018,2025-10-26,Bijuterias,E-commerce,160.29,0.00,160.29,Concluído
+PED-0088,CLI-018,2026-05-19,Acessórios de cabelo,E-commerce,69.90,0.00,69.90,Concluído
+PED-0089,CLI-018,2026-10-06,Acessórios de cabelo,Loja física,94.95,0.00,94.95,Concluído
+PED-0090,CLI-019,2026-10-26,Bolsas,E-commerce,490.32,24.52,465.80,Concluído
+PED-0091,CLI-020,2026-10-20,Óculos,E-commerce,142.22,0.00,142.22,Concluído
+PED-0092,CLI-020,2026-10-26,Acessórios de cabelo,E-commerce,127.40,0.00,127.40,Concluído
+PED-0093,CLI-021,2025-05-18,Bijuterias,E-commerce,331.22,0.00,331.22,Concluído
+PED-0094,CLI-021,2025-10-12,Óculos,E-commerce,292.11,58.42,233.69,Concluído
+PED-0095,CLI-021,2026-02-01,Óculos,E-commerce,294.38,0.00,294.38,Concluído
+PED-0096,CLI-021,2026-02-07,Óculos,Loja física,173.90,8.70,165.20,Concluído
+PED-0097,CLI-021,2026-04-20,Relógios,Loja física,292.88,14.64,278.24,Concluído
+PED-0098,CLI-021,2026-06-25,Óculos,E-commerce,257.85,38.68,219.17,Concluído
+PED-0099,CLI-022,2025-06-02,Acessórios de cabelo,E-commerce,128.34,25.67,102.67,Concluído
+PED-0100,CLI-022,2025-09-11,Relógios,E-commerce,184.89,18.49,166.40,Concluído
+PED-0101,CLI-022,2026-01-21,Lenços,E-commerce,175.16,35.03,140.13,Concluído
+PED-0102,CLI-022,2026-02-27,Acessórios de cabelo,E-commerce,230.68,34.60,196.08,Concluído
+PED-0103,CLI-022,2026-08-05,Lenços,Loja física,219.32,0.00,219.32,Concluído
+PED-0104,CLI-023,2025-08-28,Carteiras,E-commerce,72.31,10.85,61.46,Concluído
+PED-0105,CLI-023,2025-09-27,Carteiras,E-commerce,241.48,36.22,205.26,Concluído
+PED-0106,CLI-023,2025-10-07,Lenços,E-commerce,162.12,0.00,162.12,Concluído
+PED-0107,CLI-023,2025-10-25,Bolsas,E-commerce,760.24,0.00,760.24,Concluído
+PED-0108,CLI-023,2025-12-31,Lenços,E-commerce,171.71,17.17,154.54,Concluído
+PED-0109,CLI-023,2026-03-10,Bolsas,E-commerce,153.28,7.66,145.62,Concluído
+PED-0110,CLI-023,2026-06-22,Carteiras,E-commerce,174.86,8.74,166.12,Concluído
+PED-0111,CLI-024,2025-04-01,Acessórios de cabelo,Loja física,98.39,19.68,0.00,Devolvido
+PED-0112,CLI-024,2025-06-16,Bolsas,Loja física,231.47,11.57,219.90,Concluído
+PED-0113,CLI-024,2025-10-16,Lenços,E-commerce,174.87,0.00,174.87,Concluído
+PED-0114,CLI-024,2026-06-10,Relógios,Loja física,486.30,72.94,413.36,Concluído
+PED-0115,CLI-025,2025-10-16,Lenços,Loja física,105.79,0.00,105.79,Concluído
+PED-0116,CLI-025,2025-11-19,Óculos,E-commerce,292.01,0.00,292.01,Concluído
+PED-0117,CLI-025,2026-08-04,Óculos,Loja física,96.32,4.82,91.50,Concluído
+PED-0118,CLI-026,2025-01-30,Bolsas,E-commerce,415.77,0.00,415.77,Concluído
+PED-0119,CLI-026,2025-11-28,Relógios,Loja física,206.11,0.00,206.11,Concluído
+PED-0120,CLI-026,2025-12-09,Bolsas,E-commerce,269.94,53.99,215.95,Concluído
+PED-0121,CLI-026,2026-03-20,Relógios,E-commerce,885.32,0.00,885.32,Concluído
+PED-0122,CLI-027,2025-02-17,Bijuterias,E-commerce,75.43,3.77,71.66,Concluído
+PED-0123,CLI-027,2025-03-06,Óculos,E-commerce,230.42,23.04,207.38,Concluído
+PED-0124,CLI-027,2025-06-05,Óculos,E-commerce,277.73,0.00,277.73,Concluído
+PED-0125,CLI-027,2025-09-29,Óculos,Loja física,288.41,0.00,288.41,Concluído
+PED-0126,CLI-027,2026-04-24,Óculos,E-commerce,142.94,21.44,121.50,Concluído
+PED-0127,CLI-028,2025-03-06,Carteiras,E-commerce,126.57,18.99,107.58,Concluído
+PED-0128,CLI-028,2025-07-06,Carteiras,Loja física,181.30,27.20,154.10,Concluído
+PED-0129,CLI-028,2025-07-31,Carteiras,Loja física,366.24,0.00,366.24,Concluído
+PED-0130,CLI-028,2026-02-18,Lenços,E-commerce,45.11,6.77,38.34,Concluído
+PED-0131,CLI-028,2026-05-27,Carteiras,Loja física,491.48,0.00,491.48,Concluído
+PED-0132,CLI-029,2025-05-18,Bolsas,E-commerce,317.06,0.00,317.06,Concluído
+PED-0133,CLI-029,2025-07-27,Bijuterias,E-commerce,73.89,14.78,59.11,Concluído
+PED-0134,CLI-029,2026-03-04,Relógios,E-commerce,292.14,0.00,292.14,Concluído
+PED-0135,CLI-029,2026-05-25,Bijuterias,E-commerce,232.46,11.62,220.84,Concluído
+PED-0136,CLI-030,2025-01-04,Óculos,Loja física,635.28,63.53,571.75,Concluído
+PED-0137,CLI-030,2025-05-28,Lenços,E-commerce,97.20,14.58,82.62,Concluído
+PED-0138,CLI-030,2025-08-11,Lenços,E-commerce,64.91,3.25,61.66,Concluído
+PED-0139,CLI-030,2025-09-28,Lenços,E-commerce,156.64,23.50,133.14,Concluído
+PED-0140,CLI-030,2026-03-04,Lenços,E-commerce,274.54,0.00,274.54,Concluído
