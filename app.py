@@ -7,7 +7,6 @@ from __future__ import annotations
 
 from datetime import date
 from html import escape
-import json
 from pathlib import Path
 
 import pandas as pd
@@ -19,7 +18,7 @@ from crm_engine import (
     SEGMENT_COLORS, SEGMENT_ORDER, calculate_rfm, compare_reference,
     eligible_audience, prepare_data, read_table, to_csv_bytes,
 )
-from campaigns import PLAYBOOKS, build_messages, campaign_brief, prompt_for_external_llm
+from campaigns import PLAYBOOKS, build_messages, campaign_brief, brief_to_markdown, prompt_for_external_llm
 
 ROOT = Path(__file__).resolve().parent
 SAMPLES = ROOT / "samples"
@@ -218,26 +217,39 @@ with view_campaign:
         st.download_button("⬇️ Lista elegível (CSV)",data=to_csv_bytes(audience[outcols]),
                            file_name=f"publico_{selected_segment.replace(' ','_').lower()}_{channel.lower().replace('-','')}.csv",mime="text/csv",disabled=audience.empty)
     with cb2:
-        st.download_button("⬇️ Briefing da campanha (JSON)",data=json.dumps(brief,ensure_ascii=False,indent=2).encode("utf-8"),
-                           file_name="briefing_campanha.json",mime="application/json",disabled=audience.empty)
+        st.download_button("⬇️ Briefing da campanha (Markdown)",data=brief_to_markdown(brief).encode("utf-8"),
+                           file_name="briefing_campanha.md",mime="text/markdown",disabled=audience.empty)
     st.caption("A elegibilidade verifica o consentimento informado na planilha; em uso real seriam necessárias verificação de origem e validade do consentimento, preferências atuais, supressões, LGPD e revisão humana antes de qualquer envio.")
 
 with view_prompts:
-    st.subheader("Laboratório de prompt engineering")
-    st.write("Crie um prompt estruturado para testar manualmente no ChatGPT, Claude ou Gemini **sem integrar uma API ao aplicativo**. O conteúdo enviado ao modelo externo utiliza somente informações agregadas, sem registros individuais de clientes.")
-    p_segment=st.selectbox("Segmento para testar",SEGMENT_ORDER,index=4,key="prompt_seg")
-    p_channel=st.radio("Canal desejado",["E-mail","WhatsApp"],horizontal=True,key="prompt_channel")
+    st.subheader("Laboratório de Prompts — Modo Marketing")
+    st.write("Prepare um prompt para criar um briefing de campanha organizado no Gemini, ChatGPT ou Claude. "
+             "**Não é necessário configurar API**: copie o prompt e cole na ferramenta de sua preferência. "
+             "O aplicativo usa apenas dados agregados para essa etapa, sem enviar registros individuais.")
+    p_segment=st.selectbox("Segmento para a campanha",SEGMENT_ORDER,index=4,key="prompt_seg")
+    p_channel=st.radio("Canal de comunicação",["E-mail","WhatsApp"],horizontal=True,key="prompt_channel")
+    p_brand=st.text_input("Nome fictício da marca",value="Ateliê Aurora",max_chars=60,key="prompt_brand")
     p_audience=eligible_audience(rfm,p_segment,p_channel)
+    st.metric("Contatos elegíveis (consentimento simulado)",len(p_audience))
+    if len(p_audience)==0:
+        st.warning("Não há contatos elegíveis para este segmento/canal. O prompt solicitará apenas um diagnóstico, sem mensagens para envio.")
+    elif len(p_audience)<30:
+        st.info("Amostra pequena: as variantes A/B são alternativas criativas, não um experimento estatístico conclusivo.")
     p_cat=p_audience.categoria_preferida.mode().iloc[0] if not p_audience.empty else "acessórios"
-    p_brief=campaign_brief(p_segment,p_channel,len(p_audience),p_cat,"Ateliê Aurora")
+    p_brief=campaign_brief(p_segment,p_channel,len(p_audience),p_cat,p_brand.strip() or "Nossa Loja")
     p_prompt=prompt_for_external_llm(p_brief,
         float(p_audience.recencia_dias.dropna().mean()) if p_audience.recencia_dias.notna().any() else 0,
         float(p_audience.valor_365d_brl.mean()) if len(p_audience)>0 else 0)
+    st.markdown("#### Prompt pronto para copiar")
     st.code(p_prompt,language="text")
-    st.download_button("⬇️ Baixar prompt (.txt)",data=p_prompt.encode("utf-8"),file_name="prompt_estrategia_crm.txt",mime="text/plain")
-    st.markdown("#### Como documentar o experimento")
-    st.markdown("1. Copie o prompt e execute em um LLM de sua escolha.  \n2. Revise o JSON gerado e verifique se não inventa descontos ou resultados.  \n3. Repita com outra variante do prompt e compare clareza, aderência e segurança.  \n4. Documente os erros, correções e critérios de avaliação no portfólio.")
-    st.info("Este painel prepara prompts para experimentação. Ele não executa GPT, Gemini ou Claude automaticamente, nem é um agente autônomo.")
+    st.download_button("⬇️ Baixar prompt de Marketing (.txt)",data=p_prompt.encode("utf-8"),
+                       file_name="prompt_modo_marketing.txt",mime="text/plain")
+    st.markdown("#### Resultado esperado no Gemini, ChatGPT ou Claude")
+    st.write("Um briefing legível com objetivo, público, hipótese de campanha, estratégia, duas mensagens "
+             "completas, CTAs, indicadores e checklist de aprovação — **sem JSON**.")
+    st.markdown("#### Como documentar seu experimento no portfólio")
+    st.markdown("1. Copie o prompt e teste em um modelo de sua escolha.  \n2. Revise se o briefing é claro, útil e adequado ao segmento.  \n3. Verifique se não foram inventados descontos, ofertas ou resultados.  \n4. Ajuste o prompt, compare as versões e documente os aprendizados.")
+    st.info("Este laboratório gera prompts para uso manual com modelos externos. O site não executa IA generativa e não envia campanhas automaticamente.")
 
 with view_about:
     st.subheader("Sobre o CRM Campaign Copilot")
@@ -251,7 +263,7 @@ Segmentar clientes e planejar campanhas personalizadas pode exigir consolidaçã
 - Apresenta dashboard de valor, frequência e recência.  
 - Cria propostas A/B **por templates**, com objetivos e KPIs por segmento.  
 - Exporta listas elegíveis segundo os consentimentos declarados, sem enviar mensagens.  
-- Gera um prompt estruturado para uso **manual** com um modelo de IA externo.
+- Prepara um prompt de **Marketing**, com briefing e duas mensagens para revisão, para uso manual em um modelo de IA externo.
 
 **O que não faz**  
 Este MVP não utiliza APIs, não executa LLMs no aplicativo, não orquestra agentes, não dispara campanhas e não prevê resultados reais de negócio. Resultados financeiros e taxas de conversão não são simulados como conquistas.
